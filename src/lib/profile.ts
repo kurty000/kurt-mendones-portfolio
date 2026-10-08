@@ -76,6 +76,16 @@ export const profile = {
   ],
   certifications: [
     {
+      id: "salesforce-platform-administrator",
+      title: "Salesforce Certified Platform Administrator",
+      issuer: "Salesforce · Trailhead",
+      date: "September 25, 2026",
+      image: "/certifications/salesforce-platform-administrator.png",
+      credentialUrl: "https://sforce.co/verifycerts",
+      description:
+        "Official Salesforce certification for platform administration. Credential ID: 8161046.",
+    },
+    {
       id: "itspecialist-networking",
       title: "Information Technology Specialist — Networking",
       issuer: "Certiport · CertNexus · Pearson",
