@@ -1,4 +1,5 @@
 import { About } from "@/components/about";
+import { CertificationsTeaser } from "@/components/certifications-teaser";
 import { Contact } from "@/components/contact";
 import { Hero } from "@/components/hero";
 import { SiteFooter } from "@/components/site-footer";
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <About />
         <Skills />
+        <CertificationsTeaser />
         <Contact />
       </main>
       <SiteFooter />

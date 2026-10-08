@@ -1,3 +1,13 @@
+export type Certification = {
+  id: string;
+  title: string;
+  issuer: string;
+  date: string;
+  image?: string;
+  credentialUrl?: string;
+  description?: string;
+};
+
 export const profile = {
   name: "Kurt Ian A. Mendones",
   shortName: "Kurt Mendones",
@@ -64,4 +74,6 @@ export const profile = {
     "Java",
     "PHP",
   ],
-} as const;
+  /** Add certificates here — images go in /public/certifications */
+  certifications: [] as Certification[],
+};
