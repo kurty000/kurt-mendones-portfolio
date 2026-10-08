@@ -76,6 +76,25 @@ export const profile = {
   ],
   certifications: [
     {
+      id: "itspecialist-networking",
+      title: "Information Technology Specialist — Networking",
+      issuer: "Certiport · CertNexus · Pearson",
+      date: "October 6, 2026",
+      image: "/certifications/itspecialist-networking.png",
+      credentialUrl: "https://verify.certiport.com",
+      description:
+        "IT Specialist certification in Networking. Credential ID: wB9PL-2F9s.",
+    },
+    {
+      id: "industrial-networking-essentials",
+      title: "Industrial Networking Essentials",
+      issuer: "Cisco Networking Academy",
+      date: "August 17, 2026",
+      image: "/certifications/industrial-networking-essentials.png",
+      description:
+        "Student-level credential covering industrial network design, Ethernet/VLANs, IP addressing, and Cisco industrial device basics.",
+    },
+    {
       id: "iso-iec-20000",
       title: "ISO/IEC 20000 IT Service Management Associate",
       issuer: "SkillFront",
@@ -83,6 +102,24 @@ export const profile = {
       image: "/certifications/iso-iec-20000-itsm.png",
       description:
         "Accredited professional certification in IT service management aligned with ISO/IEC 20000.",
+    },
+    {
+      id: "salesforce-virtual-internship",
+      title: "Salesforce Supported Virtual Internship Program 2025",
+      issuer: "SmartBridge · Salesforce Partner",
+      date: "January 2, 2026",
+      image: "/certifications/salesforce-virtual-internship-2025.png",
+      description:
+        "Completed an 8-week virtual internship (Aug–Nov 2025) covering Salesforce fundamentals, automation, Apex, Visualforce, LWC, and Agentforce. Certificate ID: SWSFVIPAD2026-0085.",
+    },
+    {
+      id: "dict-cybersecurity-attendance",
+      title: "The Road to Digitalization Leads through Cybersecurity",
+      issuer: "DICT Bulacan · ILCDB",
+      date: "October 24, 2025",
+      image: "/certifications/dict-cybersecurity-attendance.png",
+      description:
+        "Certificate of Attendance for a four-hour information session by DICT Region III / DICT Bulacan.",
     },
     {
       id: "intro-cybersecurity",
@@ -96,11 +133,11 @@ export const profile = {
     {
       id: "agentblazer-champion",
       title: "Salesforce Agentblazer Champion Workshop",
-      issuer: "Smartbridge · Salesforce Partner",
+      issuer: "SmartBridge · Salesforce Partner",
       date: "September 18, 2025",
       image: "/certifications/salesforce-agentblazer-champion.png",
       description:
-        "Completed the Salesforce Agentblazer Champion Workshop with Smartbridge.",
+        "Completed the Salesforce Agentblazer Champion Workshop with SmartBridge.",
     },
     {
       id: "python-essentials-1",
@@ -110,6 +147,15 @@ export const profile = {
       image: "/certifications/python-essentials-1.png",
       description:
         "Statement of Achievement for completing Python Essentials 1 and preparing for PCEP-level skills.",
+    },
+    {
+      id: "python-essentials-1-dict",
+      title: "Python Essentials 1 (DICT-ITU DTC Initiative)",
+      issuer: "Cisco Networking Academy · DICT-ITU DTC Initiative",
+      date: "August 26, 2025",
+      image: "/certifications/python-essentials-1-dict.png",
+      description:
+        "Course completion certificate offered by the DICT-ITU DTC Initiative through Cisco Networking Academy.",
     },
     {
       id: "packet-tracer-getting-started",
