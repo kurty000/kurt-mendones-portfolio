@@ -22,4 +22,10 @@ Open [http://127.0.0.1:43127](http://127.0.0.1:43127).
 
 ## Edit content
 
-Profile copy lives in [`src/lib/profile.ts`](src/lib/profile.ts) — update name, about text, skills, tools, email, and phone there.
+Profile copy lives in [`src/lib/profile.ts`](src/lib/profile.ts) — update name, about text, skills, tools, email, phone, and certifications there.
+
+### Certifications
+
+1. Drop certificate images into `public/certifications/`.
+2. Add each entry to `profile.certifications` in `src/lib/profile.ts`.
+3. Open `/certifications` on the site to review.
