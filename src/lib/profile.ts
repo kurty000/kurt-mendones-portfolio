@@ -74,6 +74,93 @@ export const profile = {
     "Java",
     "PHP",
   ],
-  /** Add certificates here — images go in /public/certifications */
-  certifications: [] as Certification[],
+  certifications: [
+    {
+      id: "iso-iec-20000",
+      title: "ISO/IEC 20000 IT Service Management Associate",
+      issuer: "SkillFront",
+      date: "Valid through July 31, 2026",
+      image: "/certifications/iso-iec-20000-itsm.png",
+      description:
+        "Accredited professional certification in IT service management aligned with ISO/IEC 20000.",
+    },
+    {
+      id: "intro-cybersecurity",
+      title: "Introduction to Cybersecurity",
+      issuer: "Cisco Networking Academy",
+      date: "October 10, 2025",
+      image: "/certifications/introduction-to-cybersecurity.png",
+      description:
+        "Student-level credential covering online safety, common threats, and how organizations protect operations.",
+    },
+    {
+      id: "agentblazer-champion",
+      title: "Salesforce Agentblazer Champion Workshop",
+      issuer: "Smartbridge · Salesforce Partner",
+      date: "September 18, 2025",
+      image: "/certifications/salesforce-agentblazer-champion.png",
+      description:
+        "Completed the Salesforce Agentblazer Champion Workshop with Smartbridge.",
+    },
+    {
+      id: "python-essentials-1",
+      title: "Python Essentials 1",
+      issuer: "Cisco Networking Academy · Python Institute",
+      date: "August 26, 2025",
+      image: "/certifications/python-essentials-1.png",
+      description:
+        "Statement of Achievement for completing Python Essentials 1 and preparing for PCEP-level skills.",
+    },
+    {
+      id: "packet-tracer-getting-started",
+      title: "Getting Started with Cisco Packet Tracer",
+      issuer: "Cisco Networking Academy · Bulacan State University",
+      date: "December 5, 2024",
+      image: "/certifications/getting-started-cisco-packet-tracer.png",
+    },
+    {
+      id: "packet-tracer-networking",
+      title: "Exploring Networking with Cisco Packet Tracer",
+      issuer: "Cisco Networking Academy · Bulacan State University",
+      date: "December 5, 2024",
+      image: "/certifications/exploring-networking-packet-tracer.png",
+    },
+    {
+      id: "packet-tracer-iot",
+      title: "Exploring Internet of Things with Cisco Packet Tracer",
+      issuer: "Cisco Networking Academy · Bulacan State University",
+      date: "November 21, 2024",
+      image: "/certifications/exploring-iot-packet-tracer.png",
+    },
+    {
+      id: "intro-iot",
+      title: "Introduction to Internet of Things",
+      issuer: "Cisco Networking Academy",
+      date: "September 9, 2024",
+      image: "/certifications/introduction-to-iot.png",
+      description:
+        "Student-level credential on IoT, digital transformation, automation, and security fundamentals.",
+    },
+    {
+      id: "iot-digital-transformation",
+      title: "Introduction to IoT and Digital Transformation",
+      issuer: "Cisco Networking Academy · Bulacan State University",
+      date: "September 9, 2024",
+      image: "/certifications/iot-and-digital-transformation.png",
+    },
+    {
+      id: "operating-systems-basics",
+      title: "Operating Systems Basics",
+      issuer: "Cisco Networking Academy · Bulacan State University",
+      date: "April 23, 2024",
+      image: "/certifications/operating-systems-basics.png",
+    },
+    {
+      id: "computer-hardware-basics",
+      title: "Computer Hardware Basics",
+      issuer: "Cisco Networking Academy · Bulacan State University",
+      date: "April 23, 2024",
+      image: "/certifications/computer-hardware-basics.png",
+    },
+  ] satisfies Certification[],
 };

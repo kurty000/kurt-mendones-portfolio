@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Certification } from "@/lib/profile";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 type CertificationsListProps = {
   certifications: Certification[];
@@ -25,7 +26,7 @@ export function CertificationsList({ certifications }: CertificationsListProps) 
           key={cert.id}
           className="grid gap-6 border-t border-border/80 pt-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-12"
         >
-          <div className="relative aspect-[4/3] overflow-hidden bg-mist/60 sm:aspect-[16/10]">
+          <div className="relative aspect-[4/3] overflow-hidden bg-white sm:aspect-[16/10]">
             {cert.image ? (
               <Image
                 src={cert.image}
@@ -60,19 +61,17 @@ export function CertificationsList({ certifications }: CertificationsListProps) 
             ) : null}
             {cert.credentialUrl ? (
               <div className="mt-7">
-                <Button
-                  render={
-                    <a
-                      href={cert.credentialUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    />
-                  }
-                  size="lg"
-                  className="h-11 rounded-md px-5 text-sm tracking-wide"
+                <a
+                  href={cert.credentialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(
+                    buttonVariants({ size: "lg" }),
+                    "h-11 rounded-md px-5 text-sm tracking-wide",
+                  )}
                 >
                   View credential
-                </Button>
+                </a>
               </div>
             ) : null}
           </div>

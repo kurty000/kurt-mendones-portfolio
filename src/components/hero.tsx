@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { profile } from "@/lib/profile";
+import { cn } from "@/lib/utils";
 
 export function Hero() {
   return (
@@ -42,21 +43,24 @@ export function Hero() {
           {profile.tagline}
         </p>
         <div className="animate-fade-up-delay-3 mt-10 flex flex-wrap gap-3">
-          <Button
-            render={<a href={`mailto:${profile.email}`} />}
-            size="lg"
-            className="h-11 rounded-md px-5 text-sm tracking-wide"
+          <a
+            href={`mailto:${profile.email}`}
+            className={cn(
+              buttonVariants({ size: "lg" }),
+              "h-11 rounded-md px-5 text-sm tracking-wide",
+            )}
           >
             Email me
-          </Button>
-          <Button
-            render={<a href="#skills" />}
-            variant="outline"
-            size="lg"
-            className="h-11 rounded-md border-white/35 bg-transparent px-5 text-sm tracking-wide text-white hover:bg-white/10 hover:text-white"
+          </a>
+          <a
+            href="#skills"
+            className={cn(
+              buttonVariants({ variant: "outline", size: "lg" }),
+              "h-11 rounded-md border-white/35 bg-transparent px-5 text-sm tracking-wide text-white hover:bg-white/10 hover:text-white",
+            )}
           >
             View skills
-          </Button>
+          </a>
         </div>
       </div>
     </section>

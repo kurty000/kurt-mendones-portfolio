@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { profile } from "@/lib/profile";
+import { cn } from "@/lib/utils";
 
 export function CertificationsTeaser() {
   const count = profile.certifications.length;
@@ -20,17 +21,19 @@ export function CertificationsTeaser() {
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             {count > 0
-              ? `Browse ${count} certificate${count === 1 ? "" : "s"} with full previews and details.`
+              ? `${count} certificates from Cisco Networking Academy, Salesforce, SkillFront, and more — with full previews.`
               : "A dedicated page for every certificate — ready to fill as credentials are added."}
           </p>
         </div>
-        <Button
-          render={<Link href="/certifications" />}
-          size="lg"
-          className="h-11 w-fit rounded-md px-5 text-sm tracking-wide"
+        <Link
+          href="/certifications"
+          className={cn(
+            buttonVariants({ size: "lg" }),
+            "h-11 w-fit rounded-md px-5 text-sm tracking-wide",
+          )}
         >
           View certifications
-        </Button>
+        </Link>
       </div>
     </section>
   );

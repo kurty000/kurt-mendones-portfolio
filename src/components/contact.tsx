@@ -1,5 +1,6 @@
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { profile } from "@/lib/profile";
+import { cn } from "@/lib/utils";
 
 export function Contact() {
   return (
@@ -42,13 +43,15 @@ export function Contact() {
               {profile.phone}
             </a>
           </div>
-          <Button
-            render={<a href={`mailto:${profile.email}`} />}
-            size="lg"
-            className="h-11 w-fit rounded-md bg-white px-5 text-sm tracking-wide text-ink hover:bg-white/90"
+          <a
+            href={`mailto:${profile.email}`}
+            className={cn(
+              buttonVariants({ size: "lg" }),
+              "h-11 w-fit rounded-md bg-white px-5 text-sm tracking-wide text-ink hover:bg-white/90",
+            )}
           >
             Start a conversation
-          </Button>
+          </a>
         </div>
       </div>
     </section>
